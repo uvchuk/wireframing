@@ -7,17 +7,25 @@
 }
 
 body {
+  font-family: 'Montserrat', sans-serif;
   background-color: var(--main-background-color);
   color: var(--main-text-color);
+  line-height: 1.2;
+  letter-spacing: -0.015em;
 }
-li {
+
+.list {
   list-style-type: none;
 }
 
 /* Site navigation */
 
 .logo {
-  color: var(--main-text-color);
+  font-family: 'Comfortaa', cursive;
+  font-weight: 400;
+  font-size: 28px;
+  text-decoration: none;
+  color: var(--title-text-color);
 }
 
 .logo:hover {
@@ -25,19 +33,20 @@ li {
 }
 
 .link {
+  font-weight: 500;
+  font-size: 15px;
   color: var(--accent-color);
 }
 
+.site-nav .link.current,
 .site-nav .link:hover,
 .site-nav .link:focus {
-  color: var(--main-text-color);
-}
-
-.site-nav .link.current {
-  color: var(--main-text-color);
+  color: inherit;
 }
 
 .button {
+  font-weight: 500;
+  font-size: 15px;
   color: var(--title-text-color);
   background-color: var(--main-background-color);
 }
@@ -56,19 +65,42 @@ li {
 
 .hero-title,
 .section-title {
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 1.43;
+  text-align: center;
   color: var(--title-text-color);
 }
 
 /* Features */
 
-.features-list .title {
+.features-list .title,
+.work-list .title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.5;
   color: var(--title-text-color);
+}
+
+.list-text {
+  font-size: 18px;
+  line-height: 1.66;
 }
 
 /* Work */
 
-.work-list .title {
-  color: var(--title-text-color);
+/* Testimonials */
+
+.section-text {
+  font-size: 36px;
+  line-height: 1.39;
+  text-align: center;
+}
+
+/* Signup */
+
+.signup {
+  text-align: left;
 }
 
 /* Footer */
@@ -80,4 +112,10 @@ li {
 .footer-list .link:hover,
 .footer-list .link:focus {
   color: var(--accent-color);
+}
+
+.license {
+  font-size: 15px;
+  line-height: 1.6;
+  text-align: center;
 }
