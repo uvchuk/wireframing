@@ -353,14 +353,15 @@ Site navigation */
 
 /* Footer */
 
-.footer .container {
+/* .footer .container {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-}
+} */
 
 .footer .resources {
   display: flex;
+  justify-content: space-between;
   border-bottom: 1px solid rgba(0, 0, 0, 0.5);
   padding-bottom: 25px;
   align-items: center;
@@ -369,13 +370,9 @@ Site navigation */
 .footer .footer-list {
   display: flex;
   width: calc(100% / 3);
+  max-width: 460px;
   justify-content: space-between;
   align-items: center;
-}
-
-.footer .logo {
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .footer-list .link {
@@ -395,10 +392,14 @@ Site navigation */
 }
 
 .footer .soc-list {
-  display: flex;
   margin-top: 80px;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: center;
+  /* display: flex;
+  justify-content: center;   */
+}
+
+.soc-list .soc-item {
+  display: inline-block;
 }
 
 .license {
