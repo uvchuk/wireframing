@@ -180,7 +180,8 @@ Site navigation */
 	padding-bottom: 155px;
 
 	text-align: center;
-
+	width: 1680px;
+	margin: 0 auto;
 	background-color: var(--secondary-background-color);
 }
 
@@ -259,6 +260,8 @@ Site navigation */
 }
 
 .work-list .work-item:nth-child(2n) {
+	width: 1680px;
+	margin: 0 auto;
 	background-color: var(--secondary-background-color);
 }
 
@@ -323,6 +326,8 @@ Site navigation */
 /* Signup */
 
 .signup.section {
+	margin: 0 auto;
+	width: 1680px;
 	background-color: var(--secondary-background-color);
 }
 
@@ -390,13 +395,37 @@ Site navigation */
 
 .footer .soc-list {
 	margin-top: 80px;
-	text-align: center;
-	/* display: flex;
-  justify-content: center;   */
+	display: flex;
+	gap: 21px;
+	justify-content: center;
 }
 
 .soc-list .soc-item {
 	display: inline-block;
+}
+
+.soc-item .link {
+	display: block;
+	padding: 9px;
+	border: 1px solid rgba(0, 0, 0, 0.5);
+	border-radius: 50%;
+}
+
+.soc-item .link:hover,
+.soc-item .link:focus {
+	background-color: var(--accent-color);
+	border-color: transparent;
+}
+
+.soc-item .link-icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.soc-item .link:hover .link-icon,
+.soc-item .link:focus .link-icon {
+	fill: var(--main-background-color);
 }
 
 .license {
